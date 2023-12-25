@@ -1,7 +1,7 @@
 const selector = '.clickable';
 const wait = (ms) => new Promise((r) => setTimeout(r, ms));
 const getTimeout = () => Math.random() * 100
-export default async (page) => {
+module.exports = async (page) => {
     console.log('started clickable job')
     let iterator = 0;
     while (iterator < 100) {
